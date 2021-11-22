@@ -1,0 +1,547 @@
+{
+    "Abs":[
+        {
+            "name":"Planks",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Side Plank",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Leg Raise",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"V-Ups on floor",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"V-Ups on bench",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Mountain Climber",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "Gluteo":[
+        {
+            "name":"Hip Thrust Barbell",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Hip Thrust machine",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Glute cable Kickbacks",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Hip Abduction machine",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"1-leg Hip Thrust",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "Sentadillas":[
+        {
+            "name":"Barbel Back Squat",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Barbell Front Squat",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Weighted Dumbell Squat",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Weighted Dumbell Sumo Squat",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Sumo DeadLift",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Leg Press",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Leg Curls",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Weighted Barbell Lunges",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Weighted Dumbell Lunges",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Single Leg Press",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "Pecho":[
+        {
+            "name":"Landmine Press",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Push-Ups",
+            "Links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Plate Pressout",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Floor Press",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Chest Press Machine",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Bench Press Flat",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Bench Press Incline",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Dumbell Press Flat",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Dumbell Press Incline",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Smith Machine Incline Press",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Pullover",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Cable Crossover",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Low Cable Crossover",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Low Dumbell Flye",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Dumbell Flye",
+            "Link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "Espalda":[
+        {
+            "name":"Bent-Over Lateral Raises",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Shoulder Press-seated",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Shoulder Press-Standing",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Resverse Fly",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Arnold Dumbell Press",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Side Lateral Raises",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Dumbell Military Press",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Dumbell Snatch",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Barbell Shrugs",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Dumbell Shrung",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Barbell Behind the Back Shrug",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Snatch Grip Barbell HIgh Pull",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Rack Pull",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Face Pull",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Farmer's Press",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "Pantorrillas":[
+        {
+            "name":"Standing Leg Calf Raise",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Seated Leg Calf Raise",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Donkey Calf Raise",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Seated Front Calf Raise",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "Isquiotibiales":[
+        {
+            "name":"Hamstring curl machine",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Still Leg Deadlift",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Lying Leg Curbs",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Glute Hamstring Raise",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "tríceps":[
+        {
+            "name":"Triceps Extension",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Push-Ups",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Skull Crusher",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Skull Crusher with Dumbell",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Close-Grip Bench Press",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Close-Grip Push Ups",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Cable Pully Push Down",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Cable Pully Rop Push Downs",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Tate Presses",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "Biceps":[
+        {
+            "name":"Bicep Curl",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Hammer Curl",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Preacher Curl",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Preacher E-Z Bar Curl",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Incline Dumbell Curl",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Concentration Curl",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Cable machine Curl",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"E-Z Bar Curl",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"21- E-Z Bar Curl",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "Back":[
+        {
+            "name":"Front Lat Pull Downs",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Pull Ups",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Straight Barbell Dumbell",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Straight Barbell Bendover",
+            "link":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"E-Z Bar Bendover",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"T-Bar",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Reverse Fly",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Single Hand Dumbell Rowing",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Double Hand Dumbell Rowing",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+        
+    ],
+    "para principiantes":[
+        {
+            "name":"Arm Circles",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Knee Push-Ups",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Standard Push-Ups",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Planks",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Squats",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Lunges",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Burpees",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Sit-Ups",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "Cuerpo completo":[
+        {
+            "name":"Inchworm",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"   
+        },
+        {
+            "name":"Tuck Jump",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"   
+        },
+        {
+            "name":"Bear Crawl",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"   
+        },
+        {
+            "name":"Mountain Climber",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"   
+        },
+        {
+            "name":"Plyometric Push-Ups",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"   
+        },
+        {
+            "name":"Prone Walkout",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"   
+        }
+    ],
+    "Piernas":[
+        {
+            "name":"Walk Sit",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Clock Lunge",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Pistol Squat",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Lunge Jump",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Squat reach and Jump",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Chair Pose Squat",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "pecho y espalda":[
+        {
+            "name":"Dolphin Push-Ups",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Contralateral Limb Raise",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Donkey Kicks",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Handstand Push-Ups",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Judo Push-Ups",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Reverse Fly",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Superman",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "Hombro y brazos":[
+        {
+            "name":"Tricep Dips",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Diamond Push-Ups",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Boxer",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Single Hand side Rise",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ],
+    "Núcleo":[
+        {
+            "name":"L Seat",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Fluter Kick",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Dynamic Prone Plank",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Side Plank",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Russian Twist",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Bicycle Crunch",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Crunch",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Segmental Rotation",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Single-Leg Abdominal Press",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Double-Leg Abdominal Press",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        },
+        {
+            "name":"Sprinter Sit-Up",
+            "links":"https://www.youtube.com/watch?v=TvxNkmjdhMM"
+        }
+    ]
+}

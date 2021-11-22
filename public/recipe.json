@@ -1,0 +1,42 @@
+
+{
+    "important":"data for per 100 gram serving",
+
+    "ensalada de pollo":[{
+        "porción":"100 gram",
+        "calorías":"133",
+        "Gordo":"4.94",
+        "Carbohidratos":"7.31",
+        "Proteína":"14.5",
+        "ingredientes":[{
+            "mayonesa":"1/4",
+            "limón":"1/2 cuchara",
+            "pimienta negra":"1/8 cuchara",
+            "pollo":"1",
+            "Almendras":"1/4",
+            "celery":"1/2"
+        }]
+    }],
+    "cardamon salón de arce":[{
+        "porción":"1 porción",
+        "calorías":"166",
+        "Gordo":"10",
+        "Carbohidratos":"5",
+        "Proteína":"14"
+    }],
+    "Pollo asado siliciliano":[{
+        "porción":"6 porción",
+        "calorías":"431",
+        "Gordo":"25.7g",
+        "Carbohidratos":"0.9",
+        "Proteína":"46.1"
+    }],
+    "pollo tandoori":[{
+        "porción":"140 gramo",
+        "calorías":"230",
+        "Gordo":"13",
+        "Carbohidratos":"1",
+        "Proteína":"29"
+    }]
+
+}

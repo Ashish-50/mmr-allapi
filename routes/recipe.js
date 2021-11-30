@@ -12,9 +12,8 @@ rerouter.get('/getcalorie',async(req,res)=>{
         const meal = req.query.meal
         const getmeals = req.body.getmeals
         const  array = getmeals.split(',')
-        console.log(typeof(array))
-        console.log(typeof(getmeals))
-        console.log(array)
+        
+        
         let mealdivide = calorie / meal 
         mealdivide = mealdivide.toFixed(0)
 
@@ -50,6 +49,7 @@ rerouter.get('/getcalorie',async(req,res)=>{
             
             res.status(200).json({
                 totalcalorie:calorie,
+                calorieleft:calorieleft,
                 meal:meal,
                 Food:{
                     calorie:mealdivide,

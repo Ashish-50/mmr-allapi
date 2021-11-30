@@ -2,6 +2,9 @@ const express = require('express');
 const foodrouter = express.Router();
 const fetch = require('node-fetch')
 
+//all food api it has carbs protein details in one api
+
+
 foodrouter.get('/',async(req,res)=>{
     const protein = await fetch('https://satsin06.github.io/coachappapi/proteins.json').then(res=>res.json()).catch(err=>console.log(err))
     const carbs = await fetch('https://satsin06.github.io/coachappapi/Carbohydrates.json').then(res=>res.json()).catch(err=>console.log(err))

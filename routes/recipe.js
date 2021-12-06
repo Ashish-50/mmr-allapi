@@ -11,14 +11,15 @@ rerouter.get('/getcalorie',async(req,res)=>{
         const calorie = req.query.calorie
         const meal = req.query.meal
         const getmeals = req.body.getmeals
-        const  array = getmeals.split(',')
-        
-        
-        let mealdivide = calorie / meal 
-        mealdivide = mealdivide.toFixed(0)
+        // const  array = getmeals.split(',')
+        // console.log(array)
+        console.log(getmeals)
 
-        const data = await Recipe.find({$and:[{ingredients:{$in:array}},{calorie:{$lte:mealdivide}}]})
-        const data1 = await Nutrition.find({$and:[{name:{$in:array}},{calorie:{$lte:mealdivide}}]})
+        let mealdivide = calorie / meal 
+        mealdivide = mealdivide.toFixed(0)      
+
+        const data = await Recipe.find({$and:[{ingredients:{$in:getmeals}},{calorie:{$lte:mealdivide}}]})
+        const data1 = await Nutrition.find({$and:[{name:{$in:getmeals}},{calorie:{$lte:mealdivide}}]})
         let sum=0
         let arr=[]
         let k=0
@@ -29,7 +30,7 @@ rerouter.get('/getcalorie',async(req,res)=>{
             }
         }
         console.log(mealdivide)
-        console.log(sum + "Sum")
+        // console.log(sum + "Sum")
         let sum1 = sum
         if(sum1<mealdivide){
             for(j=0;j<data1.length;j++){
@@ -40,7 +41,7 @@ rerouter.get('/getcalorie',async(req,res)=>{
             }
         }
         var calorieleft = mealdivide-sum1
-        console.log(sum1 + "Sum1")
+        // console.log(sum1 + "Sum1")
         
 
         

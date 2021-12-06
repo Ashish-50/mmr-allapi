@@ -10,6 +10,9 @@ const abschema = mongoose.Schema(
         link:{
             type:String,
             required:true
+        },
+        image:{
+            type:String
         }
     }
 )
@@ -23,6 +26,9 @@ const gluteschema = mongoose.Schema(
         link:{
             type:String,
             required:true
+        },
+        image:{
+            type:String
         }
     }
 )
@@ -36,6 +42,9 @@ const squatschema = mongoose.Schema(
         link:{
             type:String,
             required:true
+        },
+        image:{
+            type:String
         }
     }
 )
@@ -49,6 +58,9 @@ const chestschema = mongoose.Schema(
         link:{
             type:String,
             required:true
+        },
+        image:{
+            type:String
         }
     }
 )
@@ -62,6 +74,9 @@ const backschema = mongoose.Schema(
         link:{
             type:String,
             required:true
+        },
+        image:{
+            type:String
         }
     }
 )
@@ -75,6 +90,9 @@ const bicepschema = mongoose.Schema(
         link:{
             type:String,
             required:true
+        },
+        image:{
+            type:String
         }
     }
 )
@@ -88,6 +106,9 @@ const tricepschema = mongoose.Schema(
         link:{
             type:String,
             required:true
+        },
+        image:{
+            type:String
         }
     }
 )
@@ -101,6 +122,9 @@ const calfschema = mongoose.Schema(
         link:{
             type:String,
             required:true
+        },
+        image:{
+            type:String
         }
     }
 )
@@ -114,38 +138,59 @@ const hamstringschema = mongoose.Schema(
         link:{
             type:String,
             required:true
+        },
+        image:{
+            type:String
         }
     }
 );
 const legschema = mongoose.Schema({
     _id:mongoose.Schema.Types.ObjectId,
     name:{type:String,required:true},
-    link:{type:String,required:true}
+    link:{type:String,required:true},
+    image:{
+        type:String
+    }
 },{collection:'Legs'})
 const coreschema = mongoose.Schema({
     _id:mongoose.Schema.Types.ObjectId,
     name:{type:String,required:true},
-    link:{type:String,required:true}
+    link:{type:String,required:true},
+    image:{
+        type:String
+    }
 },{collection:'Core'})
 const fullbodyschema = mongoose.Schema({
     _id:mongoose.Schema.Types.ObjectId,
     name:{type:String,required:true},
-    link:{type:String,required:true}
+    link:{type:String,required:true},
+    image:{
+        type:String
+    }
 },{collection:'Full-body'})
 const forbegschema = mongoose.Schema({
     _id:mongoose.Schema.Types.ObjectId,
     name:{type:String,required:true},
-    link:{type:String,required:true}
+    link:{type:String,required:true},
+    image:{
+        type:String
+    }
 },{collection:'For-Beginners'})
 const chestbackschema = mongoose.Schema({
     _id:mongoose.Schema.Types.ObjectId,
     name:{type:String,required:true},
-    link:{type:String,required:true}
+    link:{type:String,required:true},
+    image:{
+        type:String
+    }
 },{collection:'Chest-and-back'})
 const shoulderschema = mongoose.Schema({
     _id:mongoose.Schema.Types.ObjectId,
     name:{type:String,required:true},
-    link:{type:String,required:true}
+    link:{type:String,required:true},
+    image:{
+        type:String
+    }
 },{collection:'Shoulder-and-Arms'})
 
 const Ab = mongoose.model('Ab',abschema);

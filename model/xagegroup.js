@@ -11,6 +11,7 @@ const xageschema = mongoose.Schema({
     },
     link:{type:String,required:true},
     worktype:{type:String,required:true},
+    image:{type:String}
 },{collection:'xage'});
 
 const yageschema = mongoose.Schema({
@@ -24,6 +25,7 @@ const yageschema = mongoose.Schema({
     },
     link:{type:String,required:true},
     worktype:{type:String,required:true},
+    image:{type:String}
 },{collection:'yage'});
 
 const zageschema = mongoose.Schema({
@@ -37,6 +39,7 @@ const zageschema = mongoose.Schema({
     },
     link:{type:String,required:true},
     worktype:{type:String,required:true},
+    image:{type:String}
 },{collection:'zage'});
 
 

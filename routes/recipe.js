@@ -5,21 +5,22 @@ const Nutrition = require('../model/nutrition')
 
 //here we have created 
 
-rerouter.get('/getcalorie',async(req,res)=>{
+rerouter.get('/getcalorie/:id',async(req,res)=>{
     try {
         
+        const getmeals = req.params.id
         const calorie = req.query.calorie
         const meal = req.query.meal
-        const getmeals = req.body.getmeals
-        // const  array = getmeals.split(',')
-        // console.log(array)
-        console.log(getmeals)
+        const  array = getmeals.split(',')
+        console.log(array)
+        // console.log(getmeals)
+        console.log(calorie,meal)
 
         let mealdivide = calorie / meal 
         mealdivide = mealdivide.toFixed(0)      
 
-        const data = await Recipe.find({$and:[{ingredients:{$in:getmeals}},{calorie:{$lte:mealdivide}}]})
-        const data1 = await Nutrition.find({$and:[{name:{$in:getmeals}},{calorie:{$lte:mealdivide}}]})
+        const data = await Recipe.find({$and:[{ingredients:{$in:array}},{calorie:{$lte:mealdivide}}]})
+        const data1 = await Nutrition.find({$and:[{name:{$in:array}},{calorie:{$lte:mealdivide}}]})
         let sum=0
         let arr=[]
         let k=0

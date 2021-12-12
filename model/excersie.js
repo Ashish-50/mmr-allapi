@@ -168,14 +168,12 @@ const fullbodyschema = mongoose.Schema({
         type:String
     }
 },{collection:'Full-body'})
-const forbegschema = mongoose.Schema({
-    _id:mongoose.Schema.Types.ObjectId,
-    name:{type:String,required:true},
-    link:{type:String,required:true},
-    image:{
-        type:String
-    }
-},{collection:'For-Beginners'})
+
+
+
+
+
+
 const chestbackschema = mongoose.Schema({
     _id:mongoose.Schema.Types.ObjectId,
     name:{type:String,required:true},
@@ -205,7 +203,6 @@ const Hamstring = mongoose.model('Hamstring',hamstringschema)
 const Legs = mongoose.model('Legs',legschema)
 const Core = mongoose.model('Core',coreschema)
 const Fullbody = mongoose.model('Full-Body',fullbodyschema)
-const Forbeg = mongoose.model('For-Beginners',forbegschema)
 const Chestback = mongoose.model('Chest-and-back',chestbackschema)
 const Shoulder = mongoose.model('Shoulder-and-Arms',shoulderschema)
 
@@ -213,4 +210,4 @@ const Shoulder = mongoose.model('Shoulder-and-Arms',shoulderschema)
 
 
 module.exports = {Ab,Glute,Squat,Chest,Bicep,Tricep,Back,Calf,
-    Hamstring,Legs,Core,Fullbody,Chestback,Forbeg,Shoulder}
+    Hamstring,Legs,Core,Fullbody,Chestback,Shoulder}

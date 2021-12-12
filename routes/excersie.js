@@ -2,7 +2,7 @@ const { json } = require('express');
 const express = require('express');
 const exerouter = express.Router();
 const {Ab,Glute,Squat,Chest,Bicep,Tricep,Back,Calf,
-    Hamstring,Legs,Core,Fullbody,Chestback,Forbeg,Shoulder} = require('../model/excersie')
+    Hamstring,Legs,Core,Fullbody,Chestback,Shoulder} = require('../model/excersie')
 
     
 exerouter.get('/',async(req,res)=>{
@@ -20,7 +20,6 @@ exerouter.get('/',async(req,res)=>{
         const legs = await Legs.find({},{_id:0}).select('name link image').then((doc)=>{return doc}).catch((err)=>{console.log(err)})
         const fullbody = await Fullbody.find({},{_id:0}).select('name link image').then((doc)=>{return doc}).catch((err)=>{console.log(err)})
         const chestback = await Chestback.find({},{_id:0}).select('name link image').then((doc)=>{return doc}).catch((err)=>{console.log(err)})
-        const forbeg = await Forbeg.find({},{_id:0}).select('name link image').then((doc)=>{return doc}).catch((err)=>{console.log(err)})
         const shoulder = await Shoulder.find({},{_id:0}).select('name link image').then((doc)=>{return doc}).catch((err)=>{console.log(err)})
         res.json([{
             "Abs":ab,
@@ -36,7 +35,6 @@ exerouter.get('/',async(req,res)=>{
             "Núcleo":core,
             "Cuerpo-completo":fullbody,
             "pecho-y-espalda":chestback,
-            "para-principiantes":forbeg,
             "Hombro-y-brazos":shoulder
         }])
     }

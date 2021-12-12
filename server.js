@@ -10,6 +10,7 @@ const nutrouter = require('./routes/nutrition');
 const agerouter = require('./routes/age');
 const foodrouter = require('./routes/allfoodapi');
 const rerouter = require('./routes/recipe');
+const forbegrouter = require('./routes/forbeg');
 
 mongoose.connect(`mongodb+srv://${process.env.databaseusername}:${process.env.databasepassword}@cluster0.1vk7i.mongodb.net/Excersie?retryWrites=true&w=majority`,{
     useNewUrlParser:true,
@@ -28,7 +29,7 @@ app.use('/food',nutrouter) //
 app.use('/age',agerouter) // it fetch data from age collection
 app.use('/allfoodapi',foodrouter) // fetch api of all food -- protein,carbs,diary,fat etc
 app.use('/recipe',rerouter) //this api has recipes of food and get calorie request or wcan create a recipe and dishes
-
+app.use('/forbeg',forbegrouter)
 
 app.listen(port,(req,res)=>{
     console.log(`server started at port ${process.env.PORT}`);

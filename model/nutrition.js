@@ -7,9 +7,9 @@ const nutschema = mongoose.Schema({
     carbs:{type:Number,required:true},
     calorie:{type:Number,required:true},
     fat:{type:Number,required:true},
-    ingredients:{
-        type:Object
-    }
+    // ingredients:{
+    //     type:Object
+    // }
 });
 
 const Nutrition = mongoose.model('Nutrition',nutschema)

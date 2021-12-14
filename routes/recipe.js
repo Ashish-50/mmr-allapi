@@ -96,6 +96,7 @@ rerouter.get('/getcalorie/:id',async(req,res)=>{
             const requiredfood = await breakfast(mealfood,calorie)
             res.status(200).json({
                 totalcalorie:calorie,
+
                 food:requiredfood
             })
         }
@@ -113,8 +114,8 @@ rerouter.get('/getcalorie/:id',async(req,res)=>{
 
             res.status(200).json({
                 totalcalorie:calorie,
-                meal1:meal1food,
-                meal2:meal2food
+                "Meal-1":{calorie:meal1,foods:meal1food},
+                "Meal-2":{calorie:meal2,foods:meal2food}
             })
         }
         
@@ -133,10 +134,10 @@ rerouter.get('/getcalorie/:id',async(req,res)=>{
             const requireddinnerfood = await dinner(dinnerfooddata,meal3,requiredlunchfood,requiredbreakfastfood)
 
             res.status(200).json({
-                breakfastmeal:meal1,
-                breakfast:requiredbreakfastfood,
-                lunch:requiredlunchfood,
-                dinner:requireddinnerfood
+                totalcalorie:calorie,
+                "Meal-1":{calorie:meal1,food:requiredbreakfastfood},
+                "Meal-2":{calorie:meal2,food:requiredlunchfood},
+                "Meal-3":{calorie:meal3,food:requireddinnerfood}
             })
         }
         else if(meal==='4'){
@@ -158,10 +159,11 @@ rerouter.get('/getcalorie/:id',async(req,res)=>{
             const requireddinnerfood = await dinner(dinnerfooddata,meal3,requiredlunchfood,requiredbreakfastfood)
 
             res.status(200).json({
-                breakfast:requiredbreakfastfood,
-                snack:requiredsnackfood,
-                lunch:requiredlunchfood,
-                dinner:requireddinnerfood
+                totalcalorie:calorie,
+                "Meal-1":{calorie:meal1,food:requiredbreakfastfood},
+                "Meal-2":{calorie:meal2,food:requiredsnackfood},
+                "Meal-3":{calorie:meal3,food:requiredlunchfood},
+                "Meal-4":{calorie:meal4,food:requireddinnerfood}
             })
 
         }
@@ -188,11 +190,12 @@ rerouter.get('/getcalorie/:id',async(req,res)=>{
             const requireddinnerfood = await dinner(dinnerfooddata,meal3,requiredlunchfood,requiredbreakfastfood)
 
             res.status(200).json({
-                breakfast:requiredbreakfastfood,
-                snack:requiredsnack1food,
-                lunch:requiredlunchfood,
-                snack2:requiredsnack2food,
-                dinner:requireddinnerfood
+                totalcalorie:calorie,
+                "Meal-1":{calorie:meal1,food:requiredbreakfastfood},
+                "Meal-2":{calorie:meal2,food:requiredsnack1food},
+                "Meal-3":{calorie:meal3,food:requiredlunchfood},
+                "Meal-4":{calorie:meal4,food:requiredsnack2food},
+                "Meal-5":{calorie:meal5,food:requireddinnerfood}
             })
 
         }

@@ -57,6 +57,7 @@ foodrouter.post('/addprotein',upload.single('image'),(req,res,next)=>{
         name:req.body.name,
         type:req.body.type,
         image:"https://mmr-allapi.herokuapp.com/allfoodapi/"+req.file.path
+        // image:"localhost:5000/allfoodapi/"+req.file.path
     });
     protein.save().then(result=>{
         res.status(201).json({
@@ -70,7 +71,7 @@ foodrouter.post('/addprotein',upload.single('image'),(req,res,next)=>{
     })
 });
 
-foodrouter.get("/fooduploads\/:str", (req, res) => {
+foodrouter.get("/fooduploads/:str", (req, res) => {
     console.log(req.params.str)
     res.sendFile(path.join(__dirname, `../fooduploads/${req.params.str}`));
   });

@@ -11,7 +11,7 @@ forbegrouter.get('/',async(req,res)=>{
     const level = req.query.level
     console.log(gender,age,goal,level)
     console.log(age)
-
+    
     if (level==='fb'){
         gender = gender.split(',')
         goal =goal.split(',')

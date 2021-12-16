@@ -22,7 +22,7 @@ mongoose.connect(`mongodb+srv://${process.env.databaseusername}:${process.env.da
 });
 
 
-app.use(express.static(path.join(__dirname, '/public')))
+app.use('/fooduploads',express.static('fooduploads'))
 app.use(express.json())
 app.use('/excersie',exerouter) //fetch api of excersies --abs,chest,glute all in one
 app.use('/food',nutrouter) // from this we fetch nutrition an ingredient

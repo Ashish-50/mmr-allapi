@@ -1,8 +1,21 @@
 const express = require('express');
 const foodrouter = express.Router();
 const fetch = require('node-fetch')
-
+const multer = require('multer')
+const {Protein,Carbs,Fruits,Fats,Diary} = require('../model/foodschema/protein');
+const mongoose = require('mongoose');
+const path = require('path')
 //all food api it has carbs protein details in one api
+
+
+const storage = multer.diskStorage({
+    destination:'fooduploads',
+    filename:(req,file,cb)=>{
+        cb(null,file.originalname)
+    }
+})
+
+const upload = multer({storage:storage})
 
 
 foodrouter.get('/',async(req,res)=>{
@@ -20,6 +33,46 @@ foodrouter.get('/',async(req,res)=>{
     })
 })
 
+foodrouter.get('/all',async(req,res)=>{
+    try {
+        const protein = await Protein.find({}).exec()
+        res.status(200).send({
+            protein:protein
+        })
+        
+    } catch (error) {
+        console.log(error)
+        res.status(500).json({
+            message:"error occured during fetching",
+            error:error
+        })
+    }
 
+})
+
+foodrouter.post('/addprotein',upload.single('image'),(req,res,next)=>{
+    
+    const protein = new Protein({
+        _id:mongoose.Types.ObjectId(),
+        name:req.body.name,
+        type:req.body.type,
+        image:"https://mmr-allapi.herokuapp.com/allfoodapi/"+req.file.path
+    });
+    protein.save().then(result=>{
+        res.status(201).json({
+            message:"Protein added"
+        })
+    })
+    .catch(err=>{
+        res.status(500).json({
+            error:err
+        })
+    })
+});
+
+foodrouter.get("/fooduploads\/:str", (req, res) => {
+    console.log(req.params.str)
+    res.sendFile(path.join(__dirname, `../fooduploads/${req.params.str}`));
+  });
 
 module.exports = foodrouter

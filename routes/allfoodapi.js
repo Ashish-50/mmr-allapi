@@ -35,7 +35,7 @@ foodrouter.get('/',async(req,res)=>{
 
 foodrouter.get('/all',async(req,res)=>{
     try {
-        const protein = await Protein.find({}).exec()
+        const protein = await Protein.find({},{_id:0}).select('name type image')
         res.status(200).send({
             protein:protein
         })

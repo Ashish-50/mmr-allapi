@@ -39,10 +39,14 @@ foodrouter.get('/all',async(req,res)=>{
         const protein = await Protein.find({},{_id:0}).select('name type image')
         const carbs = await Carbs.find({},{_id:0}).select('name type image')
         const fats = await Fats.find({},{_id:0}).select('name type image')
+        const diary = await Diary.find({},{_id:0}).select('name type image')
+        const fruits = await Fruits.find({},{_id:0}).select('name type image')
         res.status(200).json({
             protein:protein,
             carbs:carbs,
-            fats:fats
+            fats:fats,
+            diary:diary,
+            fruits:fruits
         })
         
     } catch (error) {
@@ -107,6 +111,46 @@ foodrouter.post('/addfats',upload.single('image'),(req,res,next)=>{
     fats.save().then(result=>{
         res.status(201).json({
             message:"fats added"
+        })
+    })
+    .catch(err=>{
+        res.status(500).json({
+            error:err
+        })
+    })
+});
+foodrouter.post('/adddiary',upload.single('image'),(req,res,next)=>{
+    
+    const diary = new Diary({
+        _id:mongoose.Types.ObjectId(),
+        name:req.body.name,
+        type:req.body.type,
+        image:"https://mmr-allapi.herokuapp.com/allfoodapi/fooduploads/"+req.file.originalname
+        // image:"localhost:5000/allfoodapi/"+req.file.originalname
+    });
+    diary.save().then(result=>{
+        res.status(201).json({
+            message:"diary added"
+        })
+    })
+    .catch(err=>{
+        res.status(500).json({
+            error:err
+        })
+    })
+});
+foodrouter.post('/addfruits',upload.single('image'),(req,res,next)=>{
+    
+    const fruits = new Fruits({
+        _id:mongoose.Types.ObjectId(),
+        name:req.body.name,
+        type:req.body.type,
+        image:"https://mmr-allapi.herokuapp.com/allfoodapi/fooduploads/"+req.file.originalname
+        // image:"localhost:5000/allfoodapi/"+req.file.originalname
+    });
+    fruits.save().then(result=>{
+        res.status(201).json({
+            message:"fruits added"
         })
     })
     .catch(err=>{

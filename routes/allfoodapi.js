@@ -57,7 +57,7 @@ foodrouter.post('/addprotein',upload.single('image'),(req,res,next)=>{
         _id:mongoose.Types.ObjectId(),
         name:req.body.name,
         type:req.body.type,
-        image:"https://mmr-allapi.herokuapp.com/allfoodapi/"+req.file.originalname
+        image:"https://mmr-allapi.herokuapp.com/allfoodapi/fooduploads/"+req.file.originalname
         // image:"localhost:5000/allfoodapi/"+req.file.originalname
     });
     protein.save().then(result=>{

@@ -71,8 +71,9 @@ foodrouter.post('/addprotein',upload.single('image'),(req,res,next)=>{
     })
 });
 
-foodrouter.get("/fooduploads/:str", (req, res) => {
+foodrouter.get("/fooduploads[/\\/]/:str", (req, res) => {
     console.log(req.params.str)
+    console.log(req.url)
     res.sendFile(path.join(__dirname, `../fooduploads/${req.params.str}`));
   });
 

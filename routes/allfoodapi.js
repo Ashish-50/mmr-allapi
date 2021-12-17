@@ -38,9 +38,11 @@ foodrouter.get('/all',async(req,res)=>{
     try {
         const protein = await Protein.find({},{_id:0}).select('name type image')
         const carbs = await Carbs.find({},{_id:0}).select('name type image')
+        const fats = await Fats.find({},{_id:0}).select('name type image')
         res.status(200).json({
             protein:protein,
-            carbs:carbs
+            carbs:carbs,
+            fats:fats
         })
         
     } catch (error) {

@@ -93,6 +93,26 @@ foodrouter.post('/addcarbs',upload.single('image'),(req,res,next)=>{
         })
     })
 });
+foodrouter.post('/addfats',upload.single('image'),(req,res,next)=>{
+    
+    const fats = new Fats({
+        _id:mongoose.Types.ObjectId(),
+        name:req.body.name,
+        type:req.body.type,
+        image:"https://mmr-allapi.herokuapp.com/allfoodapi/fooduploads/"+req.file.originalname
+        // image:"localhost:5000/allfoodapi/"+req.file.originalname
+    });
+    fats.save().then(result=>{
+        res.status(201).json({
+            message:"fats added"
+        })
+    })
+    .catch(err=>{
+        res.status(500).json({
+            error:err
+        })
+    })
+});
 
 foodrouter.get("/fooduploads/:str", (req, res) => {
     console.log(req.params.str)

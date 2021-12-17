@@ -37,8 +37,8 @@ const fruitsSchema = mongoose.Schema({
 
 
 const Protein = mongoose.model('Protein',proteinSchema)
-const Carbs = mongoose.model('Protein',proteinSchema)
-const Fats = mongoose.model('Protein',proteinSchema)
-const Diary = mongoose.model('Protein',proteinSchema)
-const Fruits = mongoose.model('Protein',proteinSchema)
+const Carbs = mongoose.model('Carbs',carbsSchema)
+const Fats = mongoose.model('Fats',fatsSchema)
+const Diary = mongoose.model('Diary',diarySchema)
+const Fruits = mongoose.model('Fruits',fruitsSchema)
 module.exports = {Protein,Carbs,Fats,Diary,Fruits}

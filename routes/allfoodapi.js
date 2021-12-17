@@ -37,8 +37,10 @@ foodrouter.get('/',async(req,res)=>{
 foodrouter.get('/all',async(req,res)=>{
     try {
         const protein = await Protein.find({},{_id:0}).select('name type image')
-        res.status(200).send({
-            protein:protein
+        const carbs = await Carbs.find({},{_id:0}).select('name type image')
+        res.status(200).json({
+            protein:protein,
+            carbs:carbs
         })
         
     } catch (error) {
@@ -63,6 +65,26 @@ foodrouter.post('/addprotein',upload.single('image'),(req,res,next)=>{
     protein.save().then(result=>{
         res.status(201).json({
             message:"Protein added"
+        })
+    })
+    .catch(err=>{
+        res.status(500).json({
+            error:err
+        })
+    })
+});
+foodrouter.post('/addcarbs',upload.single('image'),(req,res,next)=>{
+    
+    const carbs = new Carbs({
+        _id:mongoose.Types.ObjectId(),
+        name:req.body.name,
+        type:req.body.type,
+        image:"https://mmr-allapi.herokuapp.com/allfoodapi/fooduploads/"+req.file.originalname
+        // image:"localhost:5000/allfoodapi/"+req.file.originalname
+    });
+    carbs.save().then(result=>{
+        res.status(201).json({
+            message:"Carbs added"
         })
     })
     .catch(err=>{
